@@ -8,7 +8,7 @@
 链表0->1->2 旋转4步变成 2->0->1
 """
 
-from single_linked_list import SingleLinkedList, array_to_single_linked_list
+from single_linked_list import array_to_single_linked_list
 
 
 def rotate_list(linked_list, k):
