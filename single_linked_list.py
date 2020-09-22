@@ -79,4 +79,4 @@ if __name__ == '__main__':
     print(single_linked_list)
     single_linked_list.remove(4)
     print(single_linked_list)
-    print len(single_linked_list)
+    print(len(single_linked_list))

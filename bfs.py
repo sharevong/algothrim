@@ -23,7 +23,7 @@ def bfs(graph, start):
         person = search_queue.popleft()
         if person not in searched:
             if person_is_seller(person):
-                print person + " is a mango seller"
+                print(person + " is a mango seller")
                 return True
             else:
                 search_queue += graph[person]
@@ -41,6 +41,6 @@ graph['anuj'] = ['']
 graph['peggy'] = ['']
 graph['thom'] = ['']
 graph['jonny'] = ['']
-print bfs(graph, 'you')
+print(bfs(graph, 'you'))
 
 

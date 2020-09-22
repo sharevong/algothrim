@@ -24,4 +24,4 @@ def get_two_sum(arr, target):
 if __name__ == '__main__':
     arr = [2,7,11,15]
     target = 9
-    print get_two_sum(arr, target)
+    print(get_two_sum(arr, target))

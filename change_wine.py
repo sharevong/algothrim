@@ -15,13 +15,13 @@ numExchange=3,numBottles=2, 最多能喝到2瓶酒
 def max_drink(num_exchange, num_bottles):
     total = num_bottles
     while num_bottles >= num_exchange:
-        change = num_bottles / num_exchange
+        change = int(num_bottles / num_exchange)
         total += change
         num_bottles = change + num_bottles % num_exchange
     return total
 
 
-print max_drink(3, 9)
-print max_drink(4, 15)
-print max_drink(5, 5)
-print max_drink(3, 2)
+print(max_drink(3, 9))
+print(max_drink(4, 15))
+print(max_drink(5, 5))
+print(max_drink(3, 2))

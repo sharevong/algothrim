@@ -47,4 +47,4 @@ def four_sum(arr, target):
 if __name__ == '__main__':
     arr = [1,0,-1,0,-2,2]
     target = 0
-    print four_sum(arr, target)
+    print(four_sum(arr, target))

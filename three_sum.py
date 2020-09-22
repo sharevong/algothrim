@@ -48,7 +48,7 @@ def three_sum(arr, target):
 if __name__ == '__main__':
     arr = [-1,0,1,2,-1,-4]
     target = 0
-    print three_sum(arr, target)
+    print(three_sum(arr, target))
 
     arr = [-4,0,1,2,2,2,2,4]
-    print three_sum(arr, target)
+    print(three_sum(arr, target))

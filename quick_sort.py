@@ -12,4 +12,4 @@ def quick_sort(arr):
 
 
 arr = [2, 8, 7, 6, 9]
-print quick_sort(arr)
+print(quick_sort(arr))

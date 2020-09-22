@@ -49,7 +49,7 @@ if __name__ == '__main__':
             [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
             [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
             [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]]
-    print max_area(grid)
+    print(max_area(grid))
 
     grid = [[0,0,0,0,0,0,0,0]]
-    print max_area(grid)
+    print(max_area(grid))
