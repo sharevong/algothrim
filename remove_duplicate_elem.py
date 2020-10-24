@@ -4,6 +4,7 @@
 
 """
 问题描述：原位删除有序数组中存在的重复元素，返回数组中不重复元素的个数
+https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
 eg：输入数组[0,1,1,2,2,3,3,3]，输出4，数组变成[0,1,2,3,2,3,3,3]
 """
 

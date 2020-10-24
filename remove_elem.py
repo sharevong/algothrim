@@ -4,6 +4,7 @@
 
 """
 问题描述：原位删除数组中的指定数值，返回移除数值后的数组长度
+https://leetcode-cn.com/problems/remove-element/
 eg：
 输入 nums=[3,2,2,3] elem=3 输出nums=[2,2,2,3] len=2
 输入 nums=[0,1,2,2,3,0,4,2] elem=2 输入nums=[0,1,3,0,4,0,4,2] len=5

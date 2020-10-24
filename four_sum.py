@@ -6,6 +6,7 @@ from collections import defaultdict
 """
 问题描述：
 给定一个数组和一个目标值，在数组中找出四个元素，使它们的和为目标值
+https://leetcode-cn.com/problems/4sum/
 示例：
 输入[1,0,-1,0,-2,2] 0 输出[[-1,0,0,1], [-2,-1,1,2], [-2,0,0,2]]
 说明：
@@ -30,21 +31,27 @@ def four_sum(arr, target):
             two_sum = arr[i] + arr[j]
             two_sum_dict[two_sum].append([i, j])
 
-    for i in range(2, len(arr)):
+    for i in range(len(arr)):
         for j in range(i+1, len(arr)):
+            if j > i+1 and arr[j] == arr[j-1]:
+                continue
             two_sum = arr[i] + arr[j]
             another_two_sum = two_sum_dict.get(target - two_sum)
             if another_two_sum is None:
                 continue
             for pair in another_two_sum:
-                if pair[1] < i:
+                if pair[0] > j:
                     a = pair[0]
                     b = pair[1]
-                    result.append([arr[a], arr[b], arr[i], arr[j]])
-    return result
+                    result.append([arr[i], arr[j], arr[a], arr[b]])
+
+    tmp = []
+    for i in result:
+        if i not in tmp:
+            tmp.append(i)
+    return tmp
 
 
 if __name__ == '__main__':
-    arr = [1,0,-1,0,-2,2]
-    target = 0
-    print(four_sum(arr, target))
+    assert four_sum([-2,-1,-1,1,1,1,2,2], 0) == [[-2,-1,1,2], [-1,-1,1,1]]
+    assert four_sum([1,0,-1,0,-2,2], 0) == [[-2,-1,1,2], [-2,0,0,2], [-1,0,0,1]]

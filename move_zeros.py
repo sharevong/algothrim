@@ -4,6 +4,7 @@
 
 """
 问题描述：原位修改数组，将数组中的0移动到数组尾部
+https://leetcode-cn.com/problems/move-zeroes/
 eg:
 输入nums=[0,1,4,0,2] 输出nums=[1,4,2,0,0]
 """
